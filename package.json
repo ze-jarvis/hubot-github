@@ -1,0 +1,19 @@
+{
+  "name": "ze-hubot-github",
+  "version": "1.0.0",
+  "description": "hubot github extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ze-jarvis/hubot-github.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ze-jarvis/hubot-github/issues"
+  },
+  "homepage": "https://github.com/ze-jarvis/hubot-github#readme"
+}
