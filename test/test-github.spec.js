@@ -4,6 +4,7 @@ var chai = require('chai');
 var sinonChai = require('sinon-chai');
 var chaiPromise = require('chai-as-promised');
 chai.use(sinonChai);
+chai.use(chaiPromise);
 var expect = chai.expect;
 
 var koala = require('../index.js');
@@ -26,9 +27,12 @@ describe('Test Github access', function() {
   });
 
   it('should list all the issues', function() {
-    var response = panda.receive('list-pr').$promise.then(function() {
-      expect(response.reply).to.have.been.calledWith('issue #1');
+    var response = panda.receive('list-pr');
+    return response.$promise.then(function() {
+      expect(response.reply).to.have.been.calledWith('issue #1: Ref');
+      //done();
     });
+    //return response.$promise;
   });
 
 });
