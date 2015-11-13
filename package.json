@@ -4,7 +4,7 @@
   "description": "hubot github extension",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/ze-jarvis/hubot-github/issues"
   },
-  "homepage": "https://github.com/ze-jarvis/hubot-github#readme"
+  "homepage": "https://github.com/ze-jarvis/hubot-github#readme",
+  "dependencies": {
+    "github": "^0.2.4"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0"
+  }
 }
